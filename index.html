@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app>
+<head>
+	<title>Frame</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+    <script src="boot/js/bootstrap.min.js">
+    </script>
+	<script type="text/javascript" src="angular.min.js">
+	</script>
+	<link href="boot/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="frame.css">
+</head>
+<body>
+	<center>
+	<div>
+		<h1 id="title">Frame</h1>
+		<div class="input-group input-group-lg">
+  			<span class="input-group-addon" id="sizing-addon1">Width:</span>
+  			<input type="text" class="form-control" ng-model="theWidth" aria-describedby="sizing-addon1">
+		</div>
+		
+		<br>
+		
+		<div class="input-group input-group-lg">
+  			<span class="input-group-addon" id="sizing-addon1">Height:</span>
+  			<input type="text" class="form-control" ng-model="theHeight" aria-describedby="sizing-addon1">
+		</div>
+
+		<hr>
+
+		<img src="frame.jpg" width={{theWidth}} height={{theHeight}}>
+	</div>
+	</center>
+</body>
+</html>
